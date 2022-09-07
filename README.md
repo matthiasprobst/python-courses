@@ -1,45 +1,33 @@
-# Sample package
+# Python-Courses
 
-Sample package including general package structure, testing with pytest and documentation with sphinx.
+Get into specific fields of application with these python courses.
 
-If you want to create your own package, you can use this package as starting point.
+## Getting started
 
-*Note, that the repository is under current development!*
+I higly recommend using an a `anaconda` environment.
 
-## Installation
-If you use `anaconda`, you may first create an environment:
+     conda create -n pycourses python=3.8 -y
+     conda activate pycourses
 
-     conda create -n sampleprojet python=3.8
-     conda activate samplepackage
+Clone the repository:
 
-Navigate to the repository directory.
+    git clone https://github.com/matthiasprobst/python-courses
 
-For development:
-
-    pip install -e ".[complete]"
-otherwise
+For full installation run
 
     pip install ".[complete]"
 
-To only install special functionality, e.g. only vtk support in addition to core dependendies, run:
+To install only the dependencies for a specific course, name it in brackets, e.g.:
 
-    pip install (-e) ".[docs]"
+    pip install ".[hdf5]"
 
+Most courses are writting in python notebooks. To work on them, start a server first. 
+The browser should open automatically:
 
-## Documentation
-Documentation can be build following the README.md in the doc/ folder
+    jupyter lab
 
-## Testing
-Go to the repository directory. For running all tests call
-```
-pytest
-```
-To get a coverage report run (you need the package `pytest-cov`):
-```
-pytest --cov --cov-report html
-```
-This will create a folder `covhtml/` with an `index.html` file in it.
+Have fun :-)
 
-
-## Contribution
-Feel free to contribute.
+## Issues and new courses
+Please open an Issue on the GitHub repository if there are any problems. Feel free to also request 
+topics that are not included in the courses yet.
